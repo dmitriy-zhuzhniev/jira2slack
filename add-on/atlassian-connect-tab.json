@@ -1,0 +1,31 @@
+{
+     "name": "Slack",
+     "description": "Atlassian Connect add-on",
+     "key": "com.example.myaddon",
+     "baseUrl": "https://c6a7869a.ngrok.io/add-on",
+     "vendor": {
+         "name": "Example, Inc.",
+         "url": "http://example.com"
+     },
+     "authentication": {
+         "type": "none"
+     },
+     "apiVersion": 1,
+     "modules": {
+         "webPanels": [
+          {
+            "url": "slack.php",
+            "location": "atl.jira.view.issue.right.context",
+            "layout": {
+              "width": "10px",
+              "height": "100%"
+            },
+            "weight": 50,
+            "name": {
+              "value": "Slack"
+            },
+            "key": "slack"
+          }
+        ]
+     }
+ }
